@@ -1,9 +1,15 @@
+# Virtual environment 
 venv/
 
+#PostgreSQL Data Base shapshot
 *sql
 
+# Virtual environment variables
 .env
 
+# Python junk 
 *__pycache__/*
+*.pyc
 
+# Notes
 players.txt
