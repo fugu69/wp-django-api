@@ -4,4 +4,4 @@ from .models import PlayerPlayer
 class PlayerSerializer(serializers.ModelSerializer):
     class Meta:
         model = PlayerPlayer
-        fields = '__all__'
+        fields = ['id', 'image', 'energy', 'gold', 'time_zone']
