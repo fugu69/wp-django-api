@@ -1,6 +1,10 @@
 from django.urls import path
-from .views import PlayerDetailView
+from .views import PlayerDetailView, player_detail_html
 
 urlpatterns = [
-    path('players/<int:pk>/', PlayerDetailView.as_view(), name='player-detail'),
+    # API response
+    path('players/<int:id>/', PlayerDetailView.as_view(), name='player-detail'),
+
+    # HTML rendering
+    path('players/<int:id>/view/', player_detail_html, name='player-detail-html'),
 ]
