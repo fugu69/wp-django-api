@@ -9,4 +9,4 @@ class PlayerSerializer(serializers.ModelSerializer):
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = ArticleArticle
-        fields = ['title']
+        fields = ['title', 'body']
