@@ -4,7 +4,8 @@ from .views import (
     PlayerPlayerUpdateView, 
     player_detail_html, 
     ArticleDetailView,
-    article_detail_html
+    article_detail_html,
+    article_update
 )
 
 urlpatterns = [
@@ -22,6 +23,8 @@ urlpatterns = [
 
     # Article HTML detail
     path('articles/<int:id>/view/', article_detail_html, name='article-detail-html'),
+
+    path('articles/<int:id>/edit/', article_update, name='article-update'),
 ]
 
 
