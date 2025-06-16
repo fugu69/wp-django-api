@@ -19,17 +19,17 @@ This is a Django + Django REST Framework (DRF) backend for the **Wild Politics**
 ## 🔌 REST API Endpoints
 
 ### Player
-- `GET /api/players/<id>/`  
+- `GET /api/players/<id>/view/`  
   Returns player information by ID.
 
-- `GET /api/player/<id>/edit/`  
-  `POST /api/player/<id>/edit/`  
+- `GET /api/players/<id>/edit/`  
+  `POST /api/players/<id>/edit/`  
   View and update player info using an HTML form.
 
 ### Article
 - `GET /api/articles/`
   Returns a list of all articles. 
-  
+
 - `GET /api/articles/<id>/`  
   Returns article information by ID.
 

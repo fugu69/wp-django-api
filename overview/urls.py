@@ -17,7 +17,7 @@ urlpatterns = [
     path('players/<int:id>/view/', player_detail_html, name='player-detail-html'),
 
     # Player Update info
-    path('player/<int:pk>/edit/', PlayerPlayerUpdateView.as_view(), name='player_update'),
+    path('players/<int:pk>/edit/', PlayerPlayerUpdateView.as_view(), name='player_update'),
 
     # Article API detail
     path('articles/<int:id>/', ArticleDetailView.as_view(), name='article-detail'),
