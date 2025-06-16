@@ -33,6 +33,11 @@ class ArticleDetailView(generics.RetrieveAPIView):
     serializer_class = ArticleSerializer
     lookup_field = 'id'
 
+# API View: List all articles
+class ArticleListView(generics.ListAPIView):
+    queryset = ArticleArticle.objects.all()
+    serializer_class = ArticleSerializer
+
 # HTML View
 def article_detail_html(request, id):
     article = get_object_or_404(ArticleArticle, id=id)
